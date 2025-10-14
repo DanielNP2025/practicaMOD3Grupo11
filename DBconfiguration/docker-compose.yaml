@@ -1,5 +1,4 @@
 services:
-  
   postgres:
     build: . #Construir contenedor usando Dockerfile presente en el directorio actual (.)
     container_name: ContDBpractMod3 # Nombre del contenedor
