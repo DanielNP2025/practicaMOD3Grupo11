@@ -2,5 +2,5 @@
 FROM postgres:latest
 # Copia el script SQL al directorio de inicialización de PostgreSQL
 COPY init.sql /docker-entrypoint-initdb.d/01_init_nuevo.sql
-COPY save_data.sql /docker-entrypoint-initdb.d/02_save_data_nuevo.sql
+COPY save_data.sql /docker-entrypoint-initdb.d/02_save_data.sql
 # PostgreSQL ejecutará automáticamente los scripts en /docker-entrypoint-initdb.d/
